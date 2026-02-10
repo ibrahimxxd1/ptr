@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MAXPC STORE
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=SN+Pro:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                
+            }
+            .nav-1{
+                background-color: white;
+                display: flex;
+                margin-top: 10px;
+                align-items: center;
+                gap: 0px;
+                padding: 10px;
+                
+            }
+            input{
+                padding: 20px 250px;
+                outline: none;
+                border-radius: 20px;
+                border-style: solid;
+                margin-right: 120px;
+            }
+            .store-logo{
+                width: 200px;
+                margin-right: 55px;
+                cursor: pointer;
+            }
+            
+            .shop-button{
+                padding: 10px 20px;
+                margin-left: 30px;
+                margin-right: 10px;
+                cursor: pointer;
+                border-style: none;
+                background-color: rgb(230, 33, 92);
+                border-radius: 20px;
+            }
+            .shop-button:hover{
+                opacity: 0.8;
+                transition: opacity 0.5s;
+            }
+            .panier-price{
+                margin-left: 0px;
+            }
+            .signup-button{
+                padding: 10px 20px;
+                cursor: pointer;
+                border-style: none;
+                border-radius: 15px;
+            }
+            .nav-search{
+                background-color: lightgrey;
+                height: auto;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                
+            }
+            .nav-2{
+                background-color: #333;
+                padding: 12px 20px;
+                display: flex;
+                align-items: center;
+                
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                margin-bottom: 30px;
+                
+
+            }
+            .nav-2 a{
+                text-decoration: none;
+                color: white;
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                cursor: pointer;
+                margin-left: 20px;
+                padding: 8px 20px ;
+                font-family: Open Sans, Arial, Helvetica, sans-serif; 
+                font-weight: bold;
+
+            }
+            .nav-2 a:hover{
+                opacity: 0.7;
+                transition: opacity 0.5s;
+            }
+            .config-1{
+                margin-left: 50px;
+                cursor: pointer;
+                background-color: rgb(230, 33, 92);
+                padding: 10px 20px;
+                color: white;
+                border-style: none;
+                border-radius: 8px;
+            }
+            .config-1:hover{
+                opacity: 0.7;
+                transition: opacity 0.5s;
+            }
+            .nos-cag{
+                background-color: rgb(230, 33, 92);
+                border-radius: 8px;
+            }
+            .products-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 20px;
+                padding: 20px;
+            }
+            .card img{
+                width: 100%;
+                height: auto;
+            }
+            .card{
+                background-color: white;
+                border-radius: 20px;
+                padding: 15px;
+                position: relative;
+                cursor: pointer;
+                transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+                
+            }
+            .card:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+                border: 3px solid #dc3545;
+            }   
+            .title-1{
+                margin-left: 10px;
+                font-size:x-large;
+            }
+            .img-container{
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 20px;
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 20px;
+
+            }     
+            .img-container img{
+                width: 100%;
+                height: auto;
+                
+
+            }   
+            .card-1{
+                background-color: white;
+                border-radius: 20px;
+                padding: 15px;
+                position: relative;
+                cursor: pointer;
+                transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+            }  
+            .card-1:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+                border: 3px solid grey;
+            }   
+            .card-1 a{
+                font-family: SN pro;
+                font-weight:300 ;
+            }
+
+            .lap-1{
+                width: 200px;
+                height: 200px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-search">
+        <nav class="nav-1">
+            <img src="logo-1.svg" class="store-logo">
+            <input type="text" placeholder="search for products">
+            
+            <a href="https://maxgaming.ma/my-account/?action=register" target="_blank">
+             <button class="signup-button">
+                👤
+        
+            </button>
+            </a>
+            <button class="shop-button"> 🛒 </button>
+            
+            <a class="panier-price">
+                0,00MAD
+            </a>
+        </nav>
+        </div>
+        <nav class="nav-2">
+            <a class="nos-cag">
+                NOS CATEGORIES  ⤵
+            </a>
+            <a>
+                PC PORTABLES |
+            </a>
+            <a>
+                MAX PC |
+            </a>
+            <a>
+                NOUVEAUX PRODUITS |
+            </a>
+            <a>
+                PROMOTIONS |
+            </a>
+            <a>
+                BOUTIQUE
+            </a>
+            <button class="config-1">
+                CONFIGURER VOTRE PC
+            </button>
+        </nav>
+    <div class="products-container">   
+        <div class="card">
+            <img src="pc-0.webp" class="pc-0">
+        </div>
+        <div class="card">
+            <img src="pc-1.webp" class="pc-1">
+        </div>
+        <div class="card">
+            <img src="pc-2.webp" class="pc-2">
+        </div>
+        <div class="card">
+            <img src="pc-3.webp" class="pc-3">
+        </div>
+    </div>
+    <h3 class="title-1">
+        Catégories les plus populaires
+    </h3>
+    <div class="img-container">
+    <div class="card-1">
+        <img src="lap-1.webp" class="lap-1" >
+        <a>
+            Processeurs
+        </a>
+    </div>
+    <div class="card-1">
+        <img src="lap-2.webp">
+        <a>
+            Périphérique PC
+        </a>
+    </div>
+    <div class="card-1">
+        <img src="lap-3.webp">
+        <a>
+            PC Portables Workstation
+        </a>
+    </div>
+    <div class="card-1">
+        <img src="lap-4.webp">
+        <a>
+            Écrans PC
+        </a>
+    </div>
+    <div class="card-1">
+        <img src="lap-5.webp">
+        <a>
+            Chaise Gaming
+        </a>
+    </div>
+    <div class="card-1">
+        <img src="lap-6.webp">
+        <a>
+            Cartes Mères
+        </a>
+    </div>
+    </div>
+    
+    </body>
+</html>
